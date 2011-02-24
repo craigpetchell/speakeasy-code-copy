@@ -1,0 +1,7 @@
+<atlassian-plugin key="org.petchell.speakeasy.codecopy" name="Code Macro Copy to Clipboard Extension" plugins-version="2">
+    <plugin-info>
+        <description>Simple extension that add a copy open to code macros in confluence.</description>
+        <version>1.0</version>
+        <vendor name="Craig Petchell" url="http://craig.petchell.org" />
+    </plugin-info>
+</atlassian-plugin>

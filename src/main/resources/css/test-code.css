@@ -1,0 +1,12 @@
+body {
+	margin: 10px;
+	border: 1px solid #f00;
+}
+
+#sidebar {
+	background-color: red;
+}
+
+.myclass {
+	font-size: 2em;
+}
