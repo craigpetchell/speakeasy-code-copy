@@ -9,7 +9,9 @@
     <artifactId>code-copy-plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <developerConnection>scm:git:git@github.com:craigpetchell/speakeasy-code-copy.git</developerConnection>
+    <!--<scm>-->
+        <!--<developerConnection>scm:git:git@github.com:craigpetchell/speakeasy-code-copy.git</developerConnection>-->
+    <!--</scm>-->
 
     <organization>
         <name>Craig Petchell</name>
