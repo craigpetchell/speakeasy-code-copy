@@ -1,7 +1,7 @@
 AJS.toInit(function($) {
     // This may be fragile due to coupling to the plugin name (and version?)
     var clipboardMovie = AJS.Data.get("static-resource-url-prefix") +
-            "/download/batch/org.petchell.speakeasy.codecopy:code-copy-1/org.petchell.speakeasy.codecopy:zero-clipboard.swf";
+            "/download/resources/org.petchell.speakeasy.codecopy:code-copy/zero-clipboard.swf";
     AJS.log("clipboardMovie = " + clipboardMovie);
     ZeroClipboard.setMoviePath(clipboardMovie);
     $('.codeContent,.preformattedContent').each(function() {
