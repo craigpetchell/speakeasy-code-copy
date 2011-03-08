@@ -1,0 +1,32 @@
+.codeContent {
+    position: relative;
+}
+
+div.copy-container {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+div.copy-button {
+    background: url('clipboard.png');
+    background-repeat: no-repeat;
+    background-position: 4px;
+    margin-top: 15px !important;
+    margin-right: 25px;
+    padding: 6px 3px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    float: right;
+    cursor: pointer;
+    opacity: .5;
+    background-opacity: 0.75;
+    width: 30px;
+    height: 30px;
+     -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+}
