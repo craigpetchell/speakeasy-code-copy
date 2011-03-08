@@ -10,7 +10,8 @@
         <resource type="download" name="zero-clipboard.js" location="zeroclipboard/ZeroClipboard.js" />
         <resource type="download" name="code-copy.css" location="css/code-copy.css" />
         <resource type="download" name="clipboard.png" location="images/clipboard.png" />
-        <resource type="download" name="zero-clipboard.swf" location="zeroclipboard/ZeroClipboard.swf"/>
+        <!-- Cheat speakeasy by bundling the flash file as a png -->
+        <resource type="download" name="zero-clipboard.swf" location="zeroclipboard/ZeroClipboard.png"/>
         <context>page</context>
         <context>blogpost</context>
     </scoped-web-resource>

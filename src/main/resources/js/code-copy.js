@@ -4,7 +4,7 @@ AJS.toInit(function($) {
             "/download/batch/org.petchell.speakeasy.codecopy:code-copy-1/org.petchell.speakeasy.codecopy:zero-clipboard.swf";
     AJS.log("clipboardMovie = " + clipboardMovie);
     ZeroClipboard.setMoviePath(clipboardMovie);
-    $('.codeContent').each(function() {
+    $('.codeContent,.preformattedContent').each(function() {
         var contentContainer = $(this);
         var text = contentContainer.text();
         var copyContainer = $('<div></div>').addClass('copy-container').appendTo(contentContainer);
