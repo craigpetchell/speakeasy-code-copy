@@ -14,6 +14,7 @@
         <resource type="download" name="zero-clipboard.swf" location="zeroclipboard/ZeroClipboard.png"/>
         <context>page</context>
         <context>blogpost</context>
+        <context>atl.general</context>
     </scoped-web-resource>
 
 </atlassian-plugin>

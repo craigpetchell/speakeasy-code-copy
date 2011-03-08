@@ -1,7 +1,18 @@
 AJS.toInit(function($) {
     // This may be fragile due to coupling to the plugin name (and version?)
-    var clipboardMovie = AJS.Data.get("static-resource-url-prefix") +
-            "/download/resources/org.petchell.speakeasy.codecopy:code-copy/zero-clipboard.swf";
+    var clipboardMovie = function() {
+        var context;
+        if(AJS.Data && AJS.Data.get) {
+            // Confluence
+            context = AJS.Data.get("static-resource-url-prefix");
+        } else {
+            // Jira
+            var pluginCss = $('link[href*="/org.petchell.speakeasy.codecopy"]').attr('href');
+            context = pluginCss.substring(0, pluginCss.indexOf('/download/batch/org.petchell.speakeasy.codecopy'));
+        }
+        return context + "/download/resources/org.petchell.speakeasy.codecopy:code-copy/zero-clipboard.swf";
+    }();
+
     AJS.log("clipboardMovie = " + clipboardMovie);
     ZeroClipboard.setMoviePath(clipboardMovie);
     $('.codeContent,.preformattedContent').each(function() {
