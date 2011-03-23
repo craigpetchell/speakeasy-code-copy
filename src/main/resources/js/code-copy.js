@@ -17,12 +17,21 @@ AJS.toInit(function($) {
     ZeroClipboard.setMoviePath(clipboardMovie);
     $('.codeContent,.preformattedContent').each(function() {
         var contentContainer = $(this);
-        var text = contentContainer.text();
         var copyContainer = $('<div></div>').addClass('copy-container').appendTo(contentContainer);
         var copyButton = $('<div></div>').addClass('copy-button').appendTo(copyContainer);
-
         var clip = new ZeroClipboard.Client();
-        clip.set
+        var text;
+
+        if(contentContainer.hasClass('codeContent')) {
+            var lines = contentContainer.find('.code').find('div.line');
+            text = "";
+            lines.each(function() {
+                text = text + $(this).text() + '\n';
+            });
+        } else {
+            text = contentContainer.text();
+        }
+
         clip.setHandCursor( true );
 
         clip.addEventListener('load', function (client) {
